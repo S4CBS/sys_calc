@@ -22,7 +22,7 @@ setup(
   ],
   keywords='sys_calc ',
   project_urls={
-    'GitHub': '---'
+    'GitHub': 'https://github.com/S4CBS/sys_calc'
   },
   python_requires='>=3.6'
 )
