@@ -1,12 +1,12 @@
-import sys_calc.calc as calc
+import sys_calc
 
 binary_str = "1101.11"
-print(calc.binary_float_to_decimal(binary_str))  # Вывод: 13.75
+print(sys_calc.binary_float_to_decimal(binary_str))  # Вывод: 13.75
 octal_str = "30.2"
-print(calc.octal_float_to_decimal(octal_str))  # Вывод: 24.25
+print(sys_calc.octal_float_to_decimal(octal_str))  # Вывод: 24.25
 # Пример использования функции
-print(calc.float_to_hex_single(f=-21.25, d=127))  # Вывод: C1AA0000
-print(hex(int(calc.binary_float_to_decimal("1011.01")+calc.octal_float_to_decimal("24.6")))[2:])
+print(sys_calc.float_to_hex_single(f=-21.25, d=127))  # Вывод: C1AA0000
+print(hex(int(sys_calc.binary_float_to_decimal("1011.01")+sys_calc.octal_float_to_decimal("24.6")))[2:])
 
 """Для хранения произвольного растрового изображения размером 890 на 460 пикселей отведено 600 Кбайт памяти без учёта размера заголовка файла. 
 При кодировании каждого пикселя используется 4 бит для определения степени прозрачности и одинаковое количество бит для указания его цвета. 
